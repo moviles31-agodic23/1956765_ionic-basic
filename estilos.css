@@ -1,0 +1,63 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+
+.contenedor-compras {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.contenedor-compras h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contenedor-compras input,
+#calcular {
+    display: inline-block;
+    width: 95%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#calcular {
+    background-color: rgb(167, 167, 44);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 1.9%;
+}
+
+#calcular:hover {
+    background-color: rgb(145, 145, 30);
+}
+
+ul#listaElementos {
+    list-style: none;
+    padding: 0;
+}
+
+ul#listaElementos li {
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#totalCalculado {
+    margin-top: 10px;
+    text-align: right;
+}
