@@ -1,0 +1,7 @@
+{
+  "name": "ticket-compra",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
