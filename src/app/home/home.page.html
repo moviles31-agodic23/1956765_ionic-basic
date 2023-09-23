@@ -1,20 +1,46 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-app>
+  <!--Header-->
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title>Ticket de compra</ion-title>
     </ion-toolbar>
   </ion-header>
+  <!--Ingresar productos-->
+  <ion-content>
+    <ion-grid [fixed]="true">
+      <h1>Ticket de compra</h1>
+      <ion-row>
+        <ion-col>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+          <ion-list>
+            <!-- Elimina el segundo <ion-list> innecesario -->
+            <ion-item>
+              <ion-input label="Articulo" placeholder="Enter text" id="producto"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-input label="Precio" type="number" placeholder="000" id="precioUnico"></ion-input>
+            </ion-item>
+            <ion-button type="submit"  class="boton-personalizado" onclick="agregarElemento()">Calcular Total</ion-button>
+
+          </ion-list>
+
+          <p>Tu Ticket</p>
+          <ul id="listaElemento"></ul>
+          <p id="totalCalculado"></p>
+
+        </ion-col>
+      </ion-row>
+      <!--Resultados de ticket-->
+      <ion-row>
+        <ion-col>
+          <ion-text>
+
+          </ion-text>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </ion-content>
+  <script src="home.page.js"></script>
+</ion-app>
